@@ -66,8 +66,8 @@
                 onEachFeature: function(feature, layer) {
                     var imgPath = feature.properties.imgPath;
                     var html = '<a href="'+imgPath+'" target="_blank">'+imgPath+'<br/><img width="200px" src="'+imgPath+'"</img></a><br/>';
-                    html += 'GPS Timestamp: <br/><b>' + feature.properties.gpsTimeStr + '</b><br/>';
-                    html += 'Image Timestamp: <br/><b>' + feature.properties.imgTimeStr + '</b><br/>';
+                    html += 'Amenity: <br/><b>' + feature.properties.gpsTimeStr + '</b><br/>';
+                    html += 'Address: <br/><b>' + feature.properties.imgTimeStr + '</b><br/>';
                     html += 'Latitude: <br/><b>' + feature.geometry.coordinates[1] + '</b><br/>';
                     html += 'Longitude: <br/><b>' + feature.geometry.coordinates[0] + '</b><br/>';
 
