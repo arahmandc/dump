@@ -106,7 +106,7 @@ flow.exec(function(){
     processImage(imgPath, this.MULTI());
   }
 }, function() {
-  var outputPath = 'dumpdata.geojson';
+  var outputPath = 'exif.geojson';
   fs.writeFileSync(outputPath, JSON.stringify(geojson, null, 2));
   console.log('Wrote GeoJSON to: ' + outputPath);
   console.log('Able to process ' + geojson.features.length + ' out of ' + imgPaths.length + ' images.');
